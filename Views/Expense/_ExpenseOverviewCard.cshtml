@@ -1,0 +1,36 @@
+﻿ @{  Layout = "_Layout";
+ }
+<div class="container-fluid mt-0">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Expense Overview Card -->
+            <div class="card card-primary" id="ExpenseOverviewCard">
+                <div class="card-header">
+                    <!-- The title of the card -->
+                    <h3 class="card-title">@ViewData["Title"] Overview</h3>
+
+                </div>
+
+                <!-- Card Body with Content -->
+                <div class="card-body">
+                    @RenderBody()
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+
+    $(document).ready(function () {
+        $(document).on('click', function (event) {
+            if (!$(event.target).is('input, textarea, [contenteditable="true"]')) {
+                document.activeElement.blur(); // Remove focus from any active input
+            }
+        });
+    });
+
+</script>

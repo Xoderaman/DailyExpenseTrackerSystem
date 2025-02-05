@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-light sidebar" style="position: sticky; top: 60px; height: calc(100vh - 60px); overflow-y: auto;">
+            <!-- Logo and Branding -->
+            <div class="sidebar-header text-center py-4">
+                <img src="~/dailyexpensetracker.png"
+                     alt="Logo"
+                     style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" />
+                <h5>Expense Tracker</h5>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <img src="~/dashboard.png" alt="Dashboard" class="nav-icon" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;"> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Budget/Budget">
+                        <img src="~/buget.png" alt="Budgeting" class="nav-icon" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;"> Budgeting
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="@Url.Action("Index", "Expense")">
+                        Expense
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Transaction">
+                        <img src="~/transactionhistory.png" alt="Transaction History" class="nav-icon" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;"> Transaction History
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Report">
+                        <img src="~/report.png" alt="Reports" class="nav-icon" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;"> Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Profile">
+                        <img src="~/profile1.png" alt="Profile" class="nav-icon" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;"> Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Logout</a>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="col-md-10" style="padding-top: 60px;">
+            <!-- Main content starts here -->
+            <div class="content-container" style="padding: 20px;">
+                <h1>@ViewData["Title"]</h1>
+                <!-- Your content goes here -->
+            </div>
+        </div>
+    </div>
+</div>

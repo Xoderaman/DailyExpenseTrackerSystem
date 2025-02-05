@@ -1,0 +1,784 @@
+﻿@* @{
+    ViewBag.Title = "Daily Expense Tracker";
+    Layout = null;
+    var expenseByCategory = ViewBag.ExpenseByCategory as IEnumerable<dynamic>;  // Cast to IEnumerable<dynamic> or your specific model
+
+    // Extract categories and amounts using LINQ after casting
+    var categories = expenseByCategory?.Where(t => t.Category != null).Select(t => t.Category).ToArray() ?? Array.Empty<string>();
+
+    var amounts = expenseByCategory?.Where(t => t.Amount != null).Select(t => (decimal)t.TotalAmount).ToArray();
+    var userName = ViewData["UserName"] as string;
+    // var username = User.Identity.Name;
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /* General Styles */
+ /* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #4A4A4A; /* Soft dark gray for text */
+}
+
+/* Container */
+.container-fluid {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+    /* Move the container to the right */
+    .container {
+        margin-left: 600px; /* This accounts for the sidebar width */
+        padding: 20px;
+        background-color: #f4f4f9; /* Optional background color */
+    }
+
+    /* Adjust layout so elements don't overlap */
+    .row {
+        margin-right: 0;
+    }
+
+    /* Optionally apply translate if needed */
+    .container {
+        transform: translateX(190px); /* Moves the container 20px to the right */
+    }
+
+
+    /* Add transition to make the arrow rotation smooth */
+    #arrow {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Add style to rotate the arrow when clicked */
+    .arrow-rotate {
+        transform: rotate(90deg); /* Rotate the arrow 90 degrees when clicked */
+    }
+
+
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    padding-top: 30px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.sidebar-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.sidebar-header h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sidebar h4 {
+    padding-left: 20px;
+    color: #2C3E50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sidebar .nav {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.sidebar .nav-link {
+    color: #2C3E50;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: background-color 0.2s ease-in-out, transform 0.3s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 4px;
+    transform: translateX(5px);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 40px;
+    padding-top: 80px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card .image {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card .image:hover {
+    transform: scale(1.1);
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4A4A4A;
+}
+
+/* Adjusting card layout for charts */
+.card-chart {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #034951;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 240px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: #AEDDE5;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar .search-bar {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.navbar-center {
+    flex: 1;
+    text-align: center;
+    color: black;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(180deg, rgba(3, 73, 81, 0.9), rgba(3, 73, 81, 0.7)), url('https://source.unsplash.com/1600x900/?finance,technology');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero-section a {
+    background-color: #AEDDE5;
+    color: #034951;
+    padding: 12px 36px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Button Styling */
+.toggle-btn {
+    background-color: #AEDDE5;
+    color: #034951;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.toggle-btn:hover {
+    background-color: #034951;
+    color: #AEDDE5;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #034951;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-link {
+    color: #AEDDE5;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+</style>
+
+<body>
+
+    <div class="navbar-center">
+        @if (!string.IsNullOrEmpty(userName))
+        {
+            <h2>Welcome, @userName!</h2>
+        }
+        else
+        {
+            <h2>Welcome, Guest!</h2>
+        }
+    </div>
+</body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-light sidebar">
+            <!-- Logo and Branding -->
+            <div class="sidebar-header text-center py-4">
+                <img src="~/dailyexpensetracker.png" alt="Logo" class="img-fluid mb-2" />
+                <h5>Expense Tracker</h5>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="~/dashboard.png" alt="Dashboard" class="nav-icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <!-- Expense Menu with arrow toggle -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="expenseNav">
+                        <img src="~/buget.png" alt="Budgeting" class="nav-icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                        <span>Expense</span>
+                        <span id="arrow" class="ml-3">&#9654;</span> <!-- Arrow icon moved further -->
+                    </a>
+                    <!-- Manage Expense Section -->
+                    <ul id="manageExpense" class="nav flex-column" style="display: none; padding-left: 30px;">
+                        <li class="nav-item"><a class="nav-link" href="#">Manage Expense</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Add Expense</a></li> <!-- New Add Expense Section -->
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Transaction">
+                        <img src="~/transactionhistory.png" alt="Transaction History" class="nav-icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                        <span>Transaction History</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Report">
+                        <img src="~/report.png" alt="Reports" class="nav-icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Profile" asp-controller="Account" asp-route-userId="@@HttpContext.Session.GetInt32(" UserId")">
+                        <img src="~/profile1.png" alt="Profile" class="nav-icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                        <span>Profile</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Logout", "Account")" class="btn btn-danger">
+                        <img src="~/logout.png" alt="Profile" class="nav-icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+ 
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+<div class="container">
+    <h2>Expense Dashboard</h2>
+
+    <!-- Charts Section -->
+    <div class="row mb-4">
+        <!-- Expense Breakdown Pie Chart -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Expense Breakdown by Category</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="expensePieChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Expense Line Chart (if needed) -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Monthly Expense Trends</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="expenseLineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Budget Suggestions -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Smart Budget Suggestions</h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Reduce entertainment expenses by 10% to save $50 this month.</li>
+                        <li>Reevaluate subscription services for possible savings.</li>
+                        <li>Plan grocery shopping with a list to minimize impulse purchases.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<scri pt>
+
+
+
+
+
+
+
+    document.getElementById('expenseNav').addEventListener('click', function () {
+        // Toggle the manage expense section
+        const manageExpense = document.getElementById('manageExpense');
+        manageExpense.style.display = (manageExpense.style.display === 'none' || manageExpense.style.display === '') ? 'block' : 'none';
+
+        // Rotate the arrow
+        const arrow = document.getElementById('arrow');
+        arrow.classList.toggle('arrow-rotate');
+    });
+
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve categories and amounts from ViewBag
+        var categories = @Html.Raw(Json.Serialize(ViewBag.Categories));
+        var amounts = @Html.Raw(Json.Serialize(ViewBag.Amounts));
+
+        var ctxPie = document.getElementById("expensePieChart").getContext("2d");
+
+        // Create the pie chart for expense by category
+        var expensePieChart = new Chart(ctxPie, {
+            type: 'pie',
+            data: {
+                labels: categories,  // Categories passed from the controller
+                datasets: [{
+                    label: 'Expenses by Category',
+                    data: amounts,  // Amounts passed from the controller
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#FF9800', '#9C27B0', '#E91E63'],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return tooltipItem.label + ': ₹' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Line chart for Monthly Expense Trends (if needed, modify as per your monthly data)
+        var ctxLine = document.getElementById("expenseLineChart").getContext("2d");
+
+        // Replace this part with actual monthly data if available
+        var months = ['January', 'February', 'March', 'April', 'May', 'June'];
+        var monthlyExpenses = [200, 300, 250, 400, 350, 450];
+
+        var expenseLineChart = new Chart(ctxLine, {
+            type: 'line',
+            data: {
+                labels: months,  // Replace with dynamic data for months
+                datasets: [{
+                    label: 'Monthly Expenses',
+                    data: monthlyExpenses,  // Replace with dynamic monthly amounts
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>*@
+@{
+    ViewBag.Title = "Daily Expense Tracker";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Cleaned layout declaration
+    var expenseByCategory = ViewBag.ExpenseByCategory as IEnumerable<dynamic>; // Cast to IEnumerable<dynamic> or your specific model
+    var categories = expenseByCategory?.Where(t => t.Category != null).Select(t => t.Category).ToArray() ?? Array.Empty<string>();
+    var amounts = expenseByCategory?.Where(t => t.Amount != null).Select(t => (decimal)t.TotalAmount).ToArray();
+    var totalSales = ViewBag.TotalSales;
+    var userName = ViewData["UserName"] as string; // Keeping username display logic
+
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM fully loaded and script running...");
+
+        // =================== Pie Chart: Expenses by Category ===================
+        var pieCanvas = document.getElementById("expensePieChart");
+        if (!pieCanvas) {
+            console.error("Pie chart canvas element not found!");
+        } else {
+            var categories = @Html.Raw(Json.Serialize(ViewBag.Categories ?? new List<string>()));
+            var amounts = @Html.Raw(Json.Serialize(ViewBag.Amounts ?? new List<decimal>()));
+
+            console.log("Categories Data:", categories);
+            console.log("Amounts Data:", amounts);
+
+            if (categories.length > 0 && amounts.length > 0) {
+                var ctxPie = pieCanvas.getContext("2d");
+                new Chart(ctxPie, {
+                    type: 'pie',
+                    data: {
+                        labels: categories,
+                        datasets: [{
+                            label: 'Expenses by Category',
+                            data: amounts,
+                            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#FF9800', '#9C27B0', '#E91E63'],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'top' },
+                            tooltip: {
+                                callbacks: {
+                                    label: function (tooltipItem) {
+                                        return tooltipItem.label + ': ₹' + tooltipItem.raw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } else {
+                console.warn("No expense data available for the pie chart.");
+            }
+        }
+
+        // =================== Bar Chart: Monthly Expenses ===================
+        var barCanvas = document.getElementById("monthlyExpenseChart");
+        if (!barCanvas) {
+            console.error("Bar chart canvas element not found!");
+        } else {
+            var monthLabels = @Html.Raw(Json.Serialize(ViewBag.MonthLabels ?? new List<string>()));
+            var monthlyAmounts = @Html.Raw(Json.Serialize(ViewBag.MonthlyAmounts ?? new List<decimal>()));
+
+            console.log("Month Labels:", monthLabels);
+            console.log("Monthly Amounts:", monthlyAmounts);
+
+            var ctxBar = barCanvas.getContext("2d");
+            var myBarChart = new Chart(ctxBar, {
+                type: 'bar',
+                data: {
+                    labels: monthLabels,
+                    datasets: [{
+                        label: 'Monthly Expenses (₹)',
+                        data: monthlyAmounts,
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)', // Blue bars
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+    });
+
+
+    document.getElementById("yearSelect").addEventListener("change", function () {
+        var selectedYear = this.value;
+        window.location.href = `@Url.Action("Index", "Home")?selectedYear=${selectedYear}`;
+    });
+</script>
+
+
+<main class="app-main">
+    <!-- App Content Header -->
+    <div class="app-content-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Dashboard</h3>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Content -->
+    <div class="app-content">
+        <div class="container-fluid">
+            <!-- Dashboard Stats Row -->
+            <div class="row">
+                <!-- Total Expenses Widget -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-primary rounded-3 p-4">
+                        <div class="image mb-2 text-center">
+                            <img src="~/TotalExpenses.png" alt="Total Expenses" class="img-fluid rounded-circle shadow-sm"
+                                 style="width: 40px; height: auto;"
+                                 onmouseover="this.style.transform='scale(1.1)';"
+                                 onmouseout="this.style.transform='scale(1)';">
+                        </div>
+                        <div class="total-expenses text-center">
+                            <h5 class="text-white mb-1">Total Expenses</h5>
+                            <h3 class="text-white">₹ @ViewBag.TotalTransactionAmount</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Budget Widget -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-success rounded-3 p-4">
+                        <div class="image mb-2 text-center">
+                            <img src="~/Monthly Budget.png" alt="Monthly Budget" class="img-fluid rounded-circle shadow-sm"
+                                 style="width: 40px; height: auto;"
+                                 onmouseover="this.style.transform='scale(1.1)';"
+                                 onmouseout="this.style.transform='scale(1)';">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-white mb-1">Current Month Expense</h5>
+                            <h3 class="text-white">
+                                ₹ @ViewBag.MonthlyExpenses
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Remaining Budget Widget -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-primary rounded-3 p-4">
+                        <div class="image mb-2 text-center">
+                            <img src="~/Remaining Budget.png" alt="Avg Monthly Spending" class="img-fluid rounded-circle shadow-sm"
+                                 style="width: 40px; height: auto;"
+                                 onmouseover="this.style.transform='scale(1.1)';"
+                                 onmouseout="this.style.transform='scale(1)';">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-white mb-1">Avg Monthly Spending</h5>
+                            <h3 class="text-white"> ₹@ViewBag.AvgMonthlySpending</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-danger rounded-3 p-4">
+                        <div class="image mb-2 text-center">
+                            <img src="~/Categories.png" alt="Categories" class="img-fluid rounded-circle shadow-sm"
+                                 style="width: 40px; height: auto;"
+                                 onmouseover="this.style.transform='scale(1.1)';"
+                                 onmouseout="this.style.transform='scale(1)';">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-white mb-1">Categories</h5>
+                            <h3 class="text-white">@ViewBag.CategoryCount</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mb-4">
+                <!-- Expense Breakdown Pie Chart -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Expense Breakdown by Category</h5>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="expensePieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+  <!-- Bar Chart for Monthly Expenses -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5>Monthly Expense Trend</h5>
+                            <!-- Year Selection Dropdown Inside the Card Header -->
+                            <select id="yearSelect" class="form-select w-auto">
+                                @foreach (var year in ViewBag.AvailableYears as int[])
+                                {
+                                    if (year == ViewBag.SelectedYear)
+                                    {
+                                        <option value="@year" selected>@year</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@year">@year</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="monthlyExpenseChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- World Map Widget -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="card text-white bg-primary bg-gradient border-primary">
+                        <div class="card-header border-0">
+                            <h3 class="card-title">Sales Value</h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-primary btn-sm" data-lte-toggle="card-collapse">
+                                    <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+                                    <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="world-map" style="height: 250px;"></div>
+                        </div>
+                        <div class="card-footer border-0">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div id="sparkline-1"></div>
+                                    <div class="text-white">Visitors</div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="sparkline-2"></div>
+                                    <div class="text-white">Online</div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="sparkline-3"></div>
+                                    <div class="text-white">Sales</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+</main>
+

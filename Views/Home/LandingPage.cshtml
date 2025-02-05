@@ -1,0 +1,248 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Daily Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Navbar with gradient background and hover effects */
+        .navbar-dark {
+            background: linear-gradient(45deg, #0FA5B0, #0FA5B0);
+        }
+
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #FDB511 !important;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Button effects */
+        .btn-outline-light {
+            border-color: #FDB511;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #FDB511;
+            color: black;
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(90deg, #0FA5B0, #20C997, #0FA5B0);
+            animation: background-gradient 5s infinite alternate;
+        }
+
+        /* Animated text */
+        .live-writing-text {
+            animation: typing 3s steps(15) infinite;
+        }
+
+        /* Image animation */
+        .img-fluid {
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out;
+            animation: bounce 2s ease-in-out infinite alternate-reverse;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Mobile responsive adjustments */
+        @@media (max-width: 767px) {
+            header .container {
+                padding: 0 10px;
+            }
+
+            h1.display-5 {
+                font-size: 1.5rem;
+            }
+
+            footer {
+                padding: 20px;
+            }
+
+            .img-fluid {
+                max-width: 90%;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #0D3B66;
+            color: white;
+            padding: 15px 0;
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120px;
+            overflow: hidden;
+        }
+
+        footer .container {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .row {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        footer .col-auto {
+            margin: 0;
+        }
+
+        footer a {
+            margin: 0 10px;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+            .dark-mode .navbar {
+                background-color: #222 !important;
+            }
+
+            .dark-mode .nav-link {
+                color: white !important;
+            }
+
+            .dark-mode .btn-outline-light {
+                border-color: white;
+                color: white;
+            }
+
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="~/DTS1.png" alt="DETS Logo" style="height: 50px; width: auto; margin-right: 10px; border-radius: 5px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Account/SignUp">User Signup</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Account/Login">User Signin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Account/SignUp">Admin SignUp</a></li>
+                    </ul>
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="darkModeToggle" class="btn btn-outline-light ms-3">🌙</button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-5 fw-bolder mb-2 text-white">
+                                <span class="live-writing-text daily">Daily</span>
+                                <span class="live-writing-text expense">Expense</span>
+                                <span class="live-writing-text tracker" style="color: #FDB511">Tracker</span>
+                                <span class="live-writing-text system">System</span>
+                            </h1>
+                            <p class="display-5 fw-bolder mb-2 text-white-50" style="font-size: 20px">DETS Developed By Aman .NET Developer</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a class="btn btn-outline-light btn-lg px-4" href="/Account/Login">User</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="/Account/Login">Admin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                        <img class="img-fluid" src="~/dailymain.jpeg" alt="DETS" style="max-width: 680px; height: 130%;"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">
+                        &copy; Daily Expense Tracker System (DETS) 2025 | All Rights Reserved
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="https://www.facebook.com" target="_blank" class="text-white ms-3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white ms-3"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white ms-3"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="text-white ms-3"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const marqueeElements = document.querySelectorAll('.live-writing-text');
+
+            marqueeElements.forEach((el, index) => {
+                el.style.setProperty('--i', index);
+            });
+        });
+        const toggleButton = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Load mode from local storage
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+        }
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+</html>

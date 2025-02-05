@@ -1,0 +1,680 @@
+2025-01-27T10:58:15.615Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-27T10:58:15.621Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-27T10:58:15.627Z - info: Extensions location cache not found, crawling directories
+2025-01-27T10:58:17.675Z - info: Found 35 extension(s)
+2025-01-27T10:58:17.747Z - info: Using extension base@4.0.0
+2025-01-27T10:58:17.752Z - info: Using extension child-templates@4.1.0
+2025-01-27T10:58:17.756Z - info: Using extension cli@4.0.5
+2025-01-27T10:58:17.758Z - info: Using extension components@4.0.2
+2025-01-27T10:58:17.760Z - info: Using extension data@4.1.0
+2025-01-27T10:58:17.762Z - info: Using extension express@4.1.3
+2025-01-27T10:58:18.100Z - info: Using extension freeze@4.0.0
+2025-01-27T10:58:18.102Z - info: Using extension fs-store@4.0.5
+2025-01-27T10:58:18.228Z - info: Using extension handlebars@4.0.1
+2025-01-27T10:58:18.230Z - info: Using extension import-export@4.0.5
+2025-01-27T10:58:18.244Z - info: Using extension jsrender@4.0.0
+2025-01-27T10:58:18.246Z - info: Using extension licensing@4.0.3
+2025-01-27T10:58:18.252Z - info: Using extension localization@4.0.1
+2025-01-27T10:58:18.253Z - info: Using extension npm@4.0.0
+2025-01-27T10:58:18.256Z - info: Using extension pdf-utils@4.2.2
+2025-01-27T10:58:18.260Z - info: Using extension reports@4.1.2
+2025-01-27T10:58:18.265Z - info: Using extension tags@4.0.1
+2025-01-27T10:58:18.267Z - info: Using extension text@4.0.2
+2025-01-27T10:58:18.268Z - info: Using extension version-control@4.0.0
+2025-01-27T10:58:18.277Z - info: Using extension assets@4.2.0
+2025-01-27T10:58:18.287Z - info: Using extension authorization@4.0.1
+2025-01-27T10:58:18.293Z - info: Using extension browser-client@4.1.0
+2025-01-27T10:58:18.296Z - info: Using extension chrome-pdf@4.1.0
+2025-01-27T10:58:18.299Z - info: Using extension docx@4.6.0
+2025-01-27T10:58:18.301Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-27T10:58:18.536Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-27T10:58:18.536Z - info: Using extension pptx@4.3.2
+2025-01-27T10:58:18.539Z - info: Using extension scheduling@4.0.0
+2025-01-27T10:58:18.577Z - info: Using extension scripts@4.1.0
+2025-01-27T10:58:18.578Z - info: Using extension static-pdf@4.1.0
+2025-01-27T10:58:18.579Z - info: Using extension studio@4.2.0
+2025-01-27T10:58:18.663Z - info: Using extension xlsx@4.3.0
+2025-01-27T10:58:18.666Z - info: Using extension public-templates@4.0.0
+2025-01-27T10:58:18.668Z - info: Using extension sample-template@4.0.0
+2025-01-27T10:58:18.670Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-27T10:58:18.672Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-27T10:58:18.672Z - info: Using fs provider for template store.
+2025-01-27T10:58:18.677Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-27T10:58:18.695Z - info: fs store is loading data
+2025-01-27T10:58:18.711Z - info: fs store is initialized successfully
+2025-01-27T10:58:18.722Z - info: Creating default express app.
+2025-01-27T10:58:18.747Z - info: jsreport server successfully started on http port: 5488
+2025-01-27T10:58:18.749Z - info: Verifying license key free
+2025-01-27T10:58:18.750Z - info: Using free license
+2025-01-27T10:58:18.793Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2025-01-27T10:58:18.805Z - info: Migration successful
+2025-01-27T10:58:19.091Z - info: Initializing worker threads
+2025-01-27T10:58:19.986Z - info: 2 worker threads initialized in 895ms
+2025-01-27T10:58:19.987Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-27T10:58:19.988Z - info: reporter initialized
+2025-01-27T11:03:09.709Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-27T11:03:09.713Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-27T11:03:09.719Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-27T11:03:09.801Z - info: Found 35 extension(s)
+2025-01-27T11:03:09.885Z - info: Using extension base@4.0.0
+2025-01-27T11:03:09.890Z - info: Using extension child-templates@4.1.0
+2025-01-27T11:03:09.894Z - info: Using extension cli@4.0.5
+2025-01-27T11:03:09.896Z - info: Using extension components@4.0.2
+2025-01-27T11:03:09.898Z - info: Using extension data@4.1.0
+2025-01-27T11:03:09.900Z - info: Using extension express@4.1.3
+2025-01-27T11:03:10.262Z - info: Using extension freeze@4.0.0
+2025-01-27T11:03:10.264Z - info: Using extension fs-store@4.0.5
+2025-01-27T11:03:10.402Z - info: Using extension handlebars@4.0.1
+2025-01-27T11:03:10.403Z - info: Using extension import-export@4.0.5
+2025-01-27T11:03:10.414Z - info: Using extension jsrender@4.0.0
+2025-01-27T11:03:10.415Z - info: Using extension licensing@4.0.3
+2025-01-27T11:03:10.421Z - info: Using extension localization@4.0.1
+2025-01-27T11:03:10.422Z - info: Using extension npm@4.0.0
+2025-01-27T11:03:10.426Z - info: Using extension pdf-utils@4.2.2
+2025-01-27T11:03:10.429Z - info: Using extension reports@4.1.2
+2025-01-27T11:03:10.434Z - info: Using extension tags@4.0.1
+2025-01-27T11:03:10.441Z - info: Using extension text@4.0.2
+2025-01-27T11:03:10.443Z - info: Using extension version-control@4.0.0
+2025-01-27T11:03:10.452Z - info: Using extension assets@4.2.0
+2025-01-27T11:03:10.463Z - info: Using extension authorization@4.0.1
+2025-01-27T11:03:10.468Z - info: Using extension browser-client@4.1.0
+2025-01-27T11:03:10.470Z - info: Using extension chrome-pdf@4.1.0
+2025-01-27T11:03:10.474Z - info: Using extension docx@4.6.0
+2025-01-27T11:03:10.476Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-27T11:03:10.705Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-27T11:03:10.706Z - info: Using extension pptx@4.3.2
+2025-01-27T11:03:10.708Z - info: Using extension scheduling@4.0.0
+2025-01-27T11:03:10.747Z - info: Using extension scripts@4.1.0
+2025-01-27T11:03:10.748Z - info: Using extension static-pdf@4.1.0
+2025-01-27T11:03:10.749Z - info: Using extension studio@4.2.0
+2025-01-27T11:03:10.837Z - info: Using extension xlsx@4.3.0
+2025-01-27T11:03:10.843Z - info: Using extension public-templates@4.0.0
+2025-01-27T11:03:10.845Z - info: Using extension sample-template@4.0.0
+2025-01-27T11:03:10.847Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-27T11:03:10.849Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-27T11:03:10.849Z - info: Using fs provider for template store.
+2025-01-27T11:03:10.854Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-27T11:03:10.860Z - info: fs store is loading data
+2025-01-27T11:03:10.889Z - info: fs store is initialized successfully
+2025-01-27T11:03:10.898Z - info: Creating default express app.
+2025-01-27T11:03:10.920Z - info: jsreport server successfully started on http port: 5488
+2025-01-27T11:03:10.921Z - info: Verifying license key free
+2025-01-27T11:03:10.922Z - info: Using free license
+2025-01-27T11:03:10.925Z - info: Initializing worker threads
+2025-01-27T11:03:11.698Z - info: 2 worker threads initialized in 773ms
+2025-01-27T11:03:11.698Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-27T11:03:11.699Z - info: reporter initialized
+2025-01-27T11:19:20.238Z - info: Render request 1 queued for execution and waiting for available worker rootId=88vmabl4a9mgo1u, id=88vmabl4a9mgo1u
+2025-01-27T11:19:20.269Z - info: Starting rendering request 1 rootId=88vmabl4a9mgo1u, id=88vmabl4a9mgo1u
+2025-01-27T11:19:20.269Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=88vmabl4a9mgo1u, id=88vmabl4a9mgo1u
+2025-01-27T11:19:20.850Z - info: Rendering request 1 finished in 615 ms rootId=88vmabl4a9mgo1u, id=88vmabl4a9mgo1u
+2025-01-27T11:22:04.021Z - info: Render request 2 queued for execution and waiting for available worker rootId=tkt0gkl3vuenfwq, id=tkt0gkl3vuenfwq
+2025-01-27T11:22:04.041Z - info: Starting rendering request 2 rootId=tkt0gkl3vuenfwq, id=tkt0gkl3vuenfwq
+2025-01-27T11:22:04.041Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=tkt0gkl3vuenfwq, id=tkt0gkl3vuenfwq
+2025-01-27T11:22:04.569Z - info: Rendering request 2 finished in 548 ms rootId=tkt0gkl3vuenfwq, id=tkt0gkl3vuenfwq
+2025-01-27T11:22:46.351Z - info: Render request 3 queued for execution and waiting for available worker rootId=huj51csaq29l49h, id=huj51csaq29l49h
+2025-01-27T11:22:46.396Z - info: Starting rendering request 3 rootId=huj51csaq29l49h, id=huj51csaq29l49h
+2025-01-27T11:22:46.398Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=huj51csaq29l49h, id=huj51csaq29l49h
+2025-01-27T11:22:46.434Z - info: Rendering request 3 finished in 88 ms rootId=huj51csaq29l49h, id=huj51csaq29l49h
+2025-01-27T11:24:26.262Z - info: Render request 4 queued for execution and waiting for available worker rootId=1hiepqqv0cgfof8, id=1hiepqqv0cgfof8
+2025-01-27T11:24:26.276Z - info: Starting rendering request 4 rootId=1hiepqqv0cgfof8, id=1hiepqqv0cgfof8
+2025-01-27T11:24:26.276Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=1hiepqqv0cgfof8, id=1hiepqqv0cgfof8
+2025-01-27T11:24:26.294Z - info: Rendering request 4 finished in 35 ms rootId=1hiepqqv0cgfof8, id=1hiepqqv0cgfof8
+2025-01-27T11:31:42.500Z - info: Render request 5 queued for execution and waiting for available worker rootId=x0pfj2088jl3p4j, id=x0pfj2088jl3p4j
+2025-01-27T11:31:42.515Z - info: Starting rendering request 5 rootId=x0pfj2088jl3p4j, id=x0pfj2088jl3p4j
+2025-01-27T11:31:42.515Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=x0pfj2088jl3p4j, id=x0pfj2088jl3p4j
+2025-01-27T11:31:42.525Z - info: Rendering request 5 finished in 27 ms rootId=x0pfj2088jl3p4j, id=x0pfj2088jl3p4j
+2025-01-27T11:34:46.458Z - info: Render request 6 queued for execution and waiting for available worker rootId=459olk84a6zhugb, id=459olk84a6zhugb
+2025-01-27T11:34:46.475Z - info: Starting rendering request 6 rootId=459olk84a6zhugb, id=459olk84a6zhugb
+2025-01-27T11:34:46.475Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=459olk84a6zhugb, id=459olk84a6zhugb
+2025-01-27T11:34:46.483Z - info: Rendering request 6 finished in 27 ms rootId=459olk84a6zhugb, id=459olk84a6zhugb
+2025-01-27T11:36:44.695Z - info: Render request 7 queued for execution and waiting for available worker rootId=l76tnl7c6soer1i, id=l76tnl7c6soer1i
+2025-01-27T11:36:44.711Z - info: Starting rendering request 7 rootId=l76tnl7c6soer1i, id=l76tnl7c6soer1i
+2025-01-27T11:36:44.711Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=l76tnl7c6soer1i, id=l76tnl7c6soer1i
+2025-01-27T11:36:44.724Z - info: Rendering request 7 finished in 31 ms rootId=l76tnl7c6soer1i, id=l76tnl7c6soer1i
+2025-01-27T11:38:59.125Z - info: Render request 8 queued for execution and waiting for available worker rootId=yp2osni2zfj3lcu, id=yp2osni2zfj3lcu
+2025-01-27T11:38:59.136Z - info: Starting rendering request 8 rootId=yp2osni2zfj3lcu, id=yp2osni2zfj3lcu
+2025-01-27T11:38:59.136Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=yp2osni2zfj3lcu, id=yp2osni2zfj3lcu
+2025-01-27T11:38:59.146Z - info: Rendering request 8 finished in 22 ms rootId=yp2osni2zfj3lcu, id=yp2osni2zfj3lcu
+2025-01-28T06:29:07.044Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-28T06:29:07.047Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-28T06:29:07.054Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-28T06:29:07.119Z - info: Found 35 extension(s)
+2025-01-28T06:29:07.192Z - info: Using extension base@4.0.0
+2025-01-28T06:29:07.197Z - info: Using extension child-templates@4.1.0
+2025-01-28T06:29:07.207Z - info: Using extension cli@4.0.5
+2025-01-28T06:29:07.210Z - info: Using extension components@4.0.2
+2025-01-28T06:29:07.213Z - info: Using extension data@4.1.0
+2025-01-28T06:29:07.215Z - info: Using extension express@4.1.3
+2025-01-28T06:29:07.778Z - info: Using extension freeze@4.0.0
+2025-01-28T06:29:07.780Z - info: Using extension fs-store@4.0.5
+2025-01-28T06:29:07.970Z - info: Using extension handlebars@4.0.1
+2025-01-28T06:29:07.972Z - info: Using extension import-export@4.0.5
+2025-01-28T06:29:07.987Z - info: Using extension jsrender@4.0.0
+2025-01-28T06:29:07.988Z - info: Using extension licensing@4.0.3
+2025-01-28T06:29:07.994Z - info: Using extension localization@4.0.1
+2025-01-28T06:29:07.996Z - info: Using extension npm@4.0.0
+2025-01-28T06:29:07.999Z - info: Using extension pdf-utils@4.2.2
+2025-01-28T06:29:08.003Z - info: Using extension reports@4.1.2
+2025-01-28T06:29:08.009Z - info: Using extension tags@4.0.1
+2025-01-28T06:29:08.012Z - info: Using extension text@4.0.2
+2025-01-28T06:29:08.017Z - info: Using extension version-control@4.0.0
+2025-01-28T06:29:08.029Z - info: Using extension assets@4.2.0
+2025-01-28T06:29:08.046Z - info: Using extension authorization@4.0.1
+2025-01-28T06:29:08.052Z - info: Using extension browser-client@4.1.0
+2025-01-28T06:29:08.055Z - info: Using extension chrome-pdf@4.1.0
+2025-01-28T06:29:08.059Z - info: Using extension docx@4.6.0
+2025-01-28T06:29:08.061Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-28T06:29:08.388Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-28T06:29:08.388Z - info: Using extension pptx@4.3.2
+2025-01-28T06:29:08.391Z - info: Using extension scheduling@4.0.0
+2025-01-28T06:29:08.434Z - info: Using extension scripts@4.1.0
+2025-01-28T06:29:08.436Z - info: Using extension static-pdf@4.1.0
+2025-01-28T06:29:08.437Z - info: Using extension studio@4.2.0
+2025-01-28T06:29:08.552Z - info: Using extension xlsx@4.3.0
+2025-01-28T06:29:08.555Z - info: Using extension public-templates@4.0.0
+2025-01-28T06:29:08.559Z - info: Using extension sample-template@4.0.0
+2025-01-28T06:29:08.561Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-28T06:29:08.563Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-28T06:29:08.563Z - info: Using fs provider for template store.
+2025-01-28T06:29:08.568Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-28T06:29:08.572Z - info: fs store is loading data
+2025-01-28T06:29:08.595Z - info: fs store is initialized successfully
+2025-01-28T06:29:08.607Z - info: Creating default express app.
+2025-01-28T06:29:08.641Z - info: jsreport server successfully started on http port: 5488
+2025-01-28T06:29:08.642Z - info: Verifying license key free
+2025-01-28T06:29:08.643Z - info: Using free license
+2025-01-28T06:29:08.646Z - info: Initializing worker threads
+2025-01-28T06:29:09.481Z - info: 2 worker threads initialized in 835ms
+2025-01-28T06:29:09.481Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-28T06:29:09.482Z - info: reporter initialized
+2025-01-28T06:29:34.993Z - info: Render request 1 queued for execution and waiting for available worker rootId=qh9pt43qsl85cyg, id=qh9pt43qsl85cyg
+2025-01-28T06:29:35.044Z - info: Starting rendering request 1 rootId=qh9pt43qsl85cyg, id=qh9pt43qsl85cyg
+2025-01-28T06:29:35.046Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=qh9pt43qsl85cyg, id=qh9pt43qsl85cyg
+2025-01-28T06:29:35.757Z - info: Rendering request 1 finished in 769 ms rootId=qh9pt43qsl85cyg, id=qh9pt43qsl85cyg
+2025-01-28T06:30:58.397Z - info: Render request 2 queued for execution and waiting for available worker rootId=wa72gw02v3kaz0v, id=wa72gw02v3kaz0v
+2025-01-28T06:30:58.434Z - info: Starting rendering request 2 rootId=wa72gw02v3kaz0v, id=wa72gw02v3kaz0v
+2025-01-28T06:30:58.435Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=wa72gw02v3kaz0v, id=wa72gw02v3kaz0v
+2025-01-28T06:30:58.973Z - info: Rendering request 2 finished in 579 ms rootId=wa72gw02v3kaz0v, id=wa72gw02v3kaz0v
+2025-01-28T06:33:43.165Z - info: Render request 3 queued for execution and waiting for available worker rootId=tu2yo4ayak4yxak, id=tu2yo4ayak4yxak
+2025-01-28T06:33:43.183Z - info: Starting rendering request 3 rootId=tu2yo4ayak4yxak, id=tu2yo4ayak4yxak
+2025-01-28T06:33:43.184Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=tu2yo4ayak4yxak, id=tu2yo4ayak4yxak
+2025-01-28T06:33:43.195Z - info: Rendering request 3 finished in 32 ms rootId=tu2yo4ayak4yxak, id=tu2yo4ayak4yxak
+2025-01-28T06:34:35.957Z - info: Render request 4 queued for execution and waiting for available worker rootId=e4t7epwxvsrzq38, id=e4t7epwxvsrzq38
+2025-01-28T06:34:35.972Z - info: Starting rendering request 4 rootId=e4t7epwxvsrzq38, id=e4t7epwxvsrzq38
+2025-01-28T06:34:35.972Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=e4t7epwxvsrzq38, id=e4t7epwxvsrzq38
+2025-01-28T06:34:35.983Z - info: Rendering request 4 finished in 28 ms rootId=e4t7epwxvsrzq38, id=e4t7epwxvsrzq38
+2025-01-28T06:38:34.585Z - info: Render request 5 queued for execution and waiting for available worker rootId=ah52mf6ju04vld9, id=ah52mf6ju04vld9
+2025-01-28T06:38:34.596Z - info: Starting rendering request 5 rootId=ah52mf6ju04vld9, id=ah52mf6ju04vld9
+2025-01-28T06:38:34.596Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=ah52mf6ju04vld9, id=ah52mf6ju04vld9
+2025-01-28T06:38:34.606Z - info: Rendering request 5 finished in 22 ms rootId=ah52mf6ju04vld9, id=ah52mf6ju04vld9
+2025-01-28T06:43:49.859Z - info: Render request 6 queued for execution and waiting for available worker rootId=6w3fh49tb6u1dy0, id=6w3fh49tb6u1dy0
+2025-01-28T06:43:49.896Z - info: Starting rendering request 6 rootId=6w3fh49tb6u1dy0, id=6w3fh49tb6u1dy0
+2025-01-28T06:43:49.897Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=6w3fh49tb6u1dy0, id=6w3fh49tb6u1dy0
+2025-01-28T06:43:49.915Z - info: Rendering request 6 finished in 61 ms rootId=6w3fh49tb6u1dy0, id=6w3fh49tb6u1dy0
+2025-01-28T06:45:56.598Z - info: Render request 7 queued for execution and waiting for available worker rootId=4vtm12w87byqohr, id=4vtm12w87byqohr
+2025-01-28T06:45:56.615Z - info: Starting rendering request 7 rootId=4vtm12w87byqohr, id=4vtm12w87byqohr
+2025-01-28T06:45:56.615Z - info: Rendering anonymous template { recipe: chrome-pdf, engine: handlebars } rootId=4vtm12w87byqohr, id=4vtm12w87byqohr
+2025-01-28T06:45:58.202Z - info: Rendering request 7 finished in 1605 ms rootId=4vtm12w87byqohr, id=4vtm12w87byqohr
+2025-01-28T06:48:06.396Z - info: Render request 8 queued for execution and waiting for available worker rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.416Z - info: Starting rendering request 8 rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.416Z - info: Rendering anonymous template { recipe: xlsx, engine: handlebars } rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.504Z - info: xlsx generation is starting rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.772Z - info: xlsx generation was finished rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.780Z - info: xlsx transformation is starting rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.820Z - warn: Error when processing render request 8
+(because) error parsing xlsx content, aren't you missing {{{xlsxPrint}}}?
+(because) unexpected token '<', "
+<h1>Expens"... is not valid JSON
+SyntaxError: Unexpected token '<', "
+<h1>Expens"... is not valid JSON
+  at JSON.parse (<anonymous>)
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\transformation\index.js:44:20)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\recipe.js:14:22)
+  at async invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:93:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17)
+wrapped by:
+Error: Error parsing xlsx content, aren't you missing {{{xlsxPrint}}}?
+(because) unexpected token '<', "
+<h1>Expens"... is not valid JSON
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at WorkerReporter.createError (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:53:12)
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\transformation\index.js:46:20)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\recipe.js:14:22)
+  at async invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:93:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17) rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.820Z - warn: Rendering request 8 finished with error in 427 ms rootId=1nucn4y9pv8m7u0, id=1nucn4y9pv8m7u0
+2025-01-28T06:48:06.823Z - warn: Error during processing request at http://localhost:5488/api/report
+2025-01-28T06:48:11.248Z - info: Render request 9 queued for execution and waiting for available worker rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.269Z - info: Starting rendering request 9 rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.269Z - info: Rendering anonymous template { recipe: xlsx, engine: handlebars } rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.334Z - info: xlsx generation is starting rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.558Z - info: xlsx generation was finished rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.563Z - info: xlsx transformation is starting rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.595Z - warn: Error when processing render request 9
+(because) error parsing xlsx content, aren't you missing {{{xlsxPrint}}}?
+(because) unexpected token '<', "
+<h1>Expens"... is not valid JSON
+SyntaxError: Unexpected token '<', "
+<h1>Expens"... is not valid JSON
+  at JSON.parse (<anonymous>)
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\transformation\index.js:44:20)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\recipe.js:14:22)
+  at async invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:93:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17)
+wrapped by:
+Error: Error parsing xlsx content, aren't you missing {{{xlsxPrint}}}?
+(because) unexpected token '<', "
+<h1>Expens"... is not valid JSON
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at WorkerReporter.createError (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:53:12)
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\transformation\index.js:46:20)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-xlsx\lib\recipe.js:14:22)
+  at async invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:93:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17) rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.595Z - warn: Rendering request 9 finished with error in 351 ms rootId=b29skui5u1wzjuq, id=b29skui5u1wzjuq
+2025-01-28T06:48:11.597Z - warn: Error during processing request at http://localhost:5488/api/report
+2025-01-28T06:48:34.711Z - info: Render request 10 queued for execution and waiting for available worker rootId=rkim3080yujrt25, id=rkim3080yujrt25
+2025-01-28T06:48:34.739Z - info: Starting rendering request 10 rootId=rkim3080yujrt25, id=rkim3080yujrt25
+2025-01-28T06:48:34.740Z - info: Rendering anonymous template { recipe: docx, engine: handlebars } rootId=rkim3080yujrt25, id=rkim3080yujrt25
+2025-01-28T06:48:35.076Z - warn: Error when processing render request 10
+(because) docx requires template.docx.templateAsset or template.docx.templateAssetShortid to be set
+Error: docx requires template.docx.templateAsset or template.docx.templateAssetShortid to be set
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at WorkerReporter.createError (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:53:12)
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-docx\lib\recipe.js:6:20)
+  at Object.execute (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-docx\lib\worker.js:54:47)
+  at invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:93:18)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17) rootId=rkim3080yujrt25, id=rkim3080yujrt25
+2025-01-28T06:48:35.077Z - warn: Rendering request 10 finished with error in 370 ms rootId=rkim3080yujrt25, id=rkim3080yujrt25
+2025-01-28T06:48:35.079Z - warn: Error during processing request at http://localhost:5488/api/report
+2025-01-28T06:49:14.108Z - info: Render request 11 queued for execution and waiting for available worker rootId=l7lcze6tydcs13q, id=l7lcze6tydcs13q
+2025-01-28T06:49:14.136Z - info: Starting rendering request 11 rootId=l7lcze6tydcs13q, id=l7lcze6tydcs13q
+2025-01-28T06:49:14.136Z - info: Rendering anonymous template { recipe: docx, engine: handlebars } rootId=l7lcze6tydcs13q, id=l7lcze6tydcs13q
+2025-01-28T06:49:14.441Z - warn: Error when processing render request 11
+(because) docx requires template.docx.templateAsset or template.docx.templateAssetShortid to be set
+Error: docx requires template.docx.templateAsset or template.docx.templateAssetShortid to be set
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at WorkerReporter.createError (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:53:12)
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-docx\lib\recipe.js:6:20)
+  at Object.execute (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-docx\lib\worker.js:54:47)
+  at invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:93:18)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17) rootId=l7lcze6tydcs13q, id=l7lcze6tydcs13q
+2025-01-28T06:49:14.441Z - warn: Rendering request 11 finished with error in 336 ms rootId=l7lcze6tydcs13q, id=l7lcze6tydcs13q
+2025-01-28T06:49:14.443Z - warn: Error during processing request at http://localhost:5488/api/report
+2025-01-28T06:49:42.320Z - info: Render request 12 queued for execution and waiting for available worker rootId=rzv154wpny17hx6, id=rzv154wpny17hx6
+2025-01-28T06:49:42.362Z - info: Starting rendering request 12 rootId=rzv154wpny17hx6, id=rzv154wpny17hx6
+2025-01-28T06:49:42.362Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=rzv154wpny17hx6, id=rzv154wpny17hx6
+2025-01-28T06:49:42.391Z - info: Rendering request 12 finished in 76 ms rootId=rzv154wpny17hx6, id=rzv154wpny17hx6
+2025-01-28T06:54:47.705Z - info: Render request 13 queued for execution and waiting for available worker rootId=r7q0bm6phl838uc, id=r7q0bm6phl838uc
+2025-01-28T06:54:47.761Z - info: Starting rendering request 13 rootId=r7q0bm6phl838uc, id=r7q0bm6phl838uc
+2025-01-28T06:54:47.762Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=r7q0bm6phl838uc, id=r7q0bm6phl838uc
+2025-01-28T06:54:47.794Z - info: Rendering request 13 finished in 93 ms rootId=r7q0bm6phl838uc, id=r7q0bm6phl838uc
+2025-01-28T06:59:11.873Z - info: Render request 14 queued for execution and waiting for available worker rootId=wtcwgp0onsv3ec6, id=wtcwgp0onsv3ec6
+2025-01-28T06:59:11.884Z - info: Starting rendering request 14 rootId=wtcwgp0onsv3ec6, id=wtcwgp0onsv3ec6
+2025-01-28T06:59:11.884Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=wtcwgp0onsv3ec6, id=wtcwgp0onsv3ec6
+2025-01-28T06:59:11.892Z - info: Rendering request 14 finished in 20 ms rootId=wtcwgp0onsv3ec6, id=wtcwgp0onsv3ec6
+2025-01-28T06:59:58.878Z - info: Render request 15 queued for execution and waiting for available worker rootId=e16fn1fj0bep5qo, id=e16fn1fj0bep5qo
+2025-01-28T06:59:58.910Z - info: Starting rendering request 15 rootId=e16fn1fj0bep5qo, id=e16fn1fj0bep5qo
+2025-01-28T06:59:58.911Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=e16fn1fj0bep5qo, id=e16fn1fj0bep5qo
+2025-01-28T06:59:58.924Z - info: Rendering request 15 finished in 49 ms rootId=e16fn1fj0bep5qo, id=e16fn1fj0bep5qo
+2025-01-28T07:22:31.461Z - info: Render request 16 queued for execution and waiting for available worker rootId=tfwhliht26yi7bz, id=tfwhliht26yi7bz
+2025-01-28T07:22:31.472Z - info: Starting rendering request 16 rootId=tfwhliht26yi7bz, id=tfwhliht26yi7bz
+2025-01-28T07:22:31.472Z - info: Rendering anonymous template { recipe: 11, engine: handlebars } rootId=tfwhliht26yi7bz, id=tfwhliht26yi7bz
+2025-01-28T07:22:31.486Z - warn: Error when processing render request 16
+(because) recipe '11' not found. If this is a custom recipe make sure it's properly installed from npm.
+Error: Recipe '11' not found. If this is a custom recipe make sure it's properly installed from npm.
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at WorkerReporter.createError (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:53:12)
+  at invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:80:22)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17) rootId=tfwhliht26yi7bz, id=tfwhliht26yi7bz
+2025-01-28T07:22:31.486Z - warn: Rendering request 16 finished with error in 26 ms rootId=tfwhliht26yi7bz, id=tfwhliht26yi7bz
+2025-01-28T07:22:31.489Z - warn: Error during processing request at http://localhost:5488/api/report
+2025-01-28T07:23:27.093Z - info: Render request 17 queued for execution and waiting for available worker rootId=q61wuajmydi63yk, id=q61wuajmydi63yk
+2025-01-28T07:23:27.103Z - info: Starting rendering request 17 rootId=q61wuajmydi63yk, id=q61wuajmydi63yk
+2025-01-28T07:23:27.103Z - info: Rendering anonymous template { recipe: 1, engine: handlebars } rootId=q61wuajmydi63yk, id=q61wuajmydi63yk
+2025-01-28T07:23:27.110Z - warn: Error when processing render request 17
+(because) recipe '1' not found. If this is a custom recipe make sure it's properly installed from npm.
+Error: Recipe '1' not found. If this is a custom recipe make sure it's properly installed from npm.
+  at module.exports (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at WorkerReporter.createError (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:53:12)
+  at invokeRender (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:80:22)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  at async WorkerReporter._render (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:148:7)
+  at async C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:232:24
+  at async processAndResponse (C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:41:17) rootId=q61wuajmydi63yk, id=q61wuajmydi63yk
+2025-01-28T07:23:27.111Z - warn: Rendering request 17 finished with error in 20 ms rootId=q61wuajmydi63yk, id=q61wuajmydi63yk
+2025-01-28T07:23:27.112Z - warn: Error during processing request at http://localhost:5488/api/report
+2025-01-28T07:41:32.493Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-28T07:41:32.497Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-28T07:41:32.504Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-28T07:41:32.565Z - info: Found 35 extension(s)
+2025-01-28T07:41:32.641Z - info: Using extension base@4.0.0
+2025-01-28T07:41:32.646Z - info: Using extension child-templates@4.1.0
+2025-01-28T07:41:32.649Z - info: Using extension cli@4.0.5
+2025-01-28T07:41:32.650Z - info: Using extension components@4.0.2
+2025-01-28T07:41:32.652Z - info: Using extension data@4.1.0
+2025-01-28T07:41:32.653Z - info: Using extension express@4.1.3
+2025-01-28T07:41:32.996Z - info: Using extension freeze@4.0.0
+2025-01-28T07:41:32.998Z - info: Using extension fs-store@4.0.5
+2025-01-28T07:41:33.144Z - info: Using extension handlebars@4.0.1
+2025-01-28T07:41:33.146Z - info: Using extension import-export@4.0.5
+2025-01-28T07:41:33.156Z - info: Using extension jsrender@4.0.0
+2025-01-28T07:41:33.157Z - info: Using extension licensing@4.0.3
+2025-01-28T07:41:33.163Z - info: Using extension localization@4.0.1
+2025-01-28T07:41:33.164Z - info: Using extension npm@4.0.0
+2025-01-28T07:41:33.167Z - info: Using extension pdf-utils@4.2.2
+2025-01-28T07:41:33.171Z - info: Using extension reports@4.1.2
+2025-01-28T07:41:33.176Z - info: Using extension tags@4.0.1
+2025-01-28T07:41:33.182Z - info: Using extension text@4.0.2
+2025-01-28T07:41:33.184Z - info: Using extension version-control@4.0.0
+2025-01-28T07:41:33.192Z - info: Using extension assets@4.2.0
+2025-01-28T07:41:33.202Z - info: Using extension authorization@4.0.1
+2025-01-28T07:41:33.207Z - info: Using extension browser-client@4.1.0
+2025-01-28T07:41:33.210Z - info: Using extension chrome-pdf@4.1.0
+2025-01-28T07:41:33.212Z - info: Using extension docx@4.6.0
+2025-01-28T07:41:33.214Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-28T07:41:33.443Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-28T07:41:33.443Z - info: Using extension pptx@4.3.2
+2025-01-28T07:41:33.446Z - info: Using extension scheduling@4.0.0
+2025-01-28T07:41:33.492Z - info: Using extension scripts@4.1.0
+2025-01-28T07:41:33.493Z - info: Using extension static-pdf@4.1.0
+2025-01-28T07:41:33.494Z - info: Using extension studio@4.2.0
+2025-01-28T07:41:33.588Z - info: Using extension xlsx@4.3.0
+2025-01-28T07:41:33.594Z - info: Using extension public-templates@4.0.0
+2025-01-28T07:41:33.596Z - info: Using extension sample-template@4.0.0
+2025-01-28T07:41:33.599Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-28T07:41:33.601Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-28T07:41:33.601Z - info: Using fs provider for template store.
+2025-01-28T07:41:33.606Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-28T07:41:33.612Z - info: fs store is loading data
+2025-01-28T07:41:33.653Z - info: fs store is initialized successfully
+2025-01-28T07:41:33.690Z - info: Creating default express app.
+2025-01-28T07:41:33.754Z - info: jsreport server successfully started on http port: 5488
+2025-01-28T07:41:33.755Z - info: Verifying license key free
+2025-01-28T07:41:33.755Z - info: Using free license
+2025-01-28T07:41:33.758Z - info: Initializing worker threads
+2025-01-28T07:41:34.502Z - info: 2 worker threads initialized in 744ms
+2025-01-28T07:41:34.503Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-28T07:41:34.504Z - info: reporter initialized
+2025-01-29T05:39:33.009Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-29T05:39:33.018Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:39:33.030Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:39:33.087Z - info: Found 35 extension(s)
+2025-01-29T05:39:33.179Z - info: Using extension base@4.0.0
+2025-01-29T05:39:33.184Z - info: Using extension child-templates@4.1.0
+2025-01-29T05:39:33.187Z - info: Using extension cli@4.0.5
+2025-01-29T05:39:33.190Z - info: Using extension components@4.0.2
+2025-01-29T05:39:33.192Z - info: Using extension data@4.1.0
+2025-01-29T05:39:33.194Z - info: Using extension express@4.1.3
+2025-01-29T05:39:33.747Z - info: Using extension freeze@4.0.0
+2025-01-29T05:39:33.750Z - info: Using extension fs-store@4.0.5
+2025-01-29T05:39:33.955Z - info: Using extension handlebars@4.0.1
+2025-01-29T05:39:33.957Z - info: Using extension import-export@4.0.5
+2025-01-29T05:39:33.974Z - info: Using extension jsrender@4.0.0
+2025-01-29T05:39:33.976Z - info: Using extension licensing@4.0.3
+2025-01-29T05:39:33.983Z - info: Using extension localization@4.0.1
+2025-01-29T05:39:33.984Z - info: Using extension npm@4.0.0
+2025-01-29T05:39:33.988Z - info: Using extension pdf-utils@4.2.2
+2025-01-29T05:39:33.991Z - info: Using extension reports@4.1.2
+2025-01-29T05:39:33.997Z - info: Using extension tags@4.0.1
+2025-01-29T05:39:34.007Z - info: Using extension text@4.0.2
+2025-01-29T05:39:34.009Z - info: Using extension version-control@4.0.0
+2025-01-29T05:39:34.021Z - info: Using extension assets@4.2.0
+2025-01-29T05:39:34.039Z - info: Using extension authorization@4.0.1
+2025-01-29T05:39:34.046Z - info: Using extension browser-client@4.1.0
+2025-01-29T05:39:34.049Z - info: Using extension chrome-pdf@4.1.0
+2025-01-29T05:39:34.053Z - info: Using extension docx@4.6.0
+2025-01-29T05:39:34.056Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-29T05:39:34.430Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-29T05:39:34.430Z - info: Using extension pptx@4.3.2
+2025-01-29T05:39:34.434Z - info: Using extension scheduling@4.0.0
+2025-01-29T05:39:34.487Z - info: Using extension scripts@4.1.0
+2025-01-29T05:39:34.489Z - info: Using extension static-pdf@4.1.0
+2025-01-29T05:39:34.490Z - info: Using extension studio@4.2.0
+2025-01-29T05:39:34.636Z - info: Using extension xlsx@4.3.0
+2025-01-29T05:39:34.643Z - info: Using extension public-templates@4.0.0
+2025-01-29T05:39:34.645Z - info: Using extension sample-template@4.0.0
+2025-01-29T05:39:34.648Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-29T05:39:34.650Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-29T05:39:34.651Z - info: Using fs provider for template store.
+2025-01-29T05:39:34.656Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-29T05:39:34.663Z - info: fs store is loading data
+2025-01-29T05:39:34.688Z - info: fs store is initialized successfully
+2025-01-29T05:39:34.699Z - info: Creating default express app.
+2025-01-29T05:39:34.738Z - info: jsreport server successfully started on http port: 5488
+2025-01-29T05:39:34.740Z - info: Verifying license key free
+2025-01-29T05:39:34.741Z - info: Using free license
+2025-01-29T05:39:34.744Z - info: Initializing worker threads
+2025-01-29T05:39:35.640Z - info: 2 worker threads initialized in 896ms
+2025-01-29T05:39:35.640Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-29T05:39:35.641Z - info: reporter initialized
+2025-01-29T05:41:25.832Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-29T05:41:25.836Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:41:25.844Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:41:25.921Z - info: Found 35 extension(s)
+2025-01-29T05:41:26.007Z - info: Using extension base@4.0.0
+2025-01-29T05:41:26.012Z - info: Using extension child-templates@4.1.0
+2025-01-29T05:41:26.016Z - info: Using extension cli@4.0.5
+2025-01-29T05:41:26.017Z - info: Using extension components@4.0.2
+2025-01-29T05:41:26.019Z - info: Using extension data@4.1.0
+2025-01-29T05:41:26.020Z - info: Using extension express@4.1.3
+2025-01-29T05:41:26.370Z - info: Using extension freeze@4.0.0
+2025-01-29T05:41:26.372Z - info: Using extension fs-store@4.0.5
+2025-01-29T05:41:26.505Z - info: Using extension handlebars@4.0.1
+2025-01-29T05:41:26.507Z - info: Using extension import-export@4.0.5
+2025-01-29T05:41:26.518Z - info: Using extension jsrender@4.0.0
+2025-01-29T05:41:26.519Z - info: Using extension licensing@4.0.3
+2025-01-29T05:41:26.526Z - info: Using extension localization@4.0.1
+2025-01-29T05:41:26.527Z - info: Using extension npm@4.0.0
+2025-01-29T05:41:26.531Z - info: Using extension pdf-utils@4.2.2
+2025-01-29T05:41:26.536Z - info: Using extension reports@4.1.2
+2025-01-29T05:41:26.552Z - info: Using extension tags@4.0.1
+2025-01-29T05:41:26.554Z - info: Using extension text@4.0.2
+2025-01-29T05:41:26.555Z - info: Using extension version-control@4.0.0
+2025-01-29T05:41:26.565Z - info: Using extension assets@4.2.0
+2025-01-29T05:41:26.576Z - info: Using extension authorization@4.0.1
+2025-01-29T05:41:26.581Z - info: Using extension browser-client@4.1.0
+2025-01-29T05:41:26.584Z - info: Using extension chrome-pdf@4.1.0
+2025-01-29T05:41:26.587Z - info: Using extension docx@4.6.0
+2025-01-29T05:41:26.589Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-29T05:41:26.840Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-29T05:41:26.840Z - info: Using extension pptx@4.3.2
+2025-01-29T05:41:26.842Z - info: Using extension scheduling@4.0.0
+2025-01-29T05:41:26.886Z - info: Using extension scripts@4.1.0
+2025-01-29T05:41:26.887Z - info: Using extension static-pdf@4.1.0
+2025-01-29T05:41:26.888Z - info: Using extension studio@4.2.0
+2025-01-29T05:41:26.986Z - info: Using extension xlsx@4.3.0
+2025-01-29T05:41:26.992Z - info: Using extension public-templates@4.0.0
+2025-01-29T05:41:26.995Z - info: Using extension sample-template@4.0.0
+2025-01-29T05:41:26.997Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-29T05:41:26.998Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-29T05:41:26.999Z - info: Using fs provider for template store.
+2025-01-29T05:41:27.006Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-29T05:41:27.013Z - info: fs store is loading data
+2025-01-29T05:41:27.038Z - info: fs store is initialized successfully
+2025-01-29T05:41:27.052Z - info: Creating default express app.
+2025-01-29T05:41:27.073Z - info: jsreport server successfully started on http port: 5488
+2025-01-29T05:41:27.074Z - info: Verifying license key free
+2025-01-29T05:41:27.074Z - info: Using free license
+2025-01-29T05:41:27.079Z - info: Initializing worker threads
+2025-01-29T05:41:27.846Z - info: 2 worker threads initialized in 767ms
+2025-01-29T05:41:27.847Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-29T05:41:27.848Z - info: reporter initialized
+2025-01-29T05:44:08.861Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-29T05:44:08.864Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:44:08.870Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:44:08.926Z - info: Found 35 extension(s)
+2025-01-29T05:44:09.006Z - info: Using extension base@4.0.0
+2025-01-29T05:44:09.010Z - info: Using extension child-templates@4.1.0
+2025-01-29T05:44:09.013Z - info: Using extension cli@4.0.5
+2025-01-29T05:44:09.015Z - info: Using extension components@4.0.2
+2025-01-29T05:44:09.016Z - info: Using extension data@4.1.0
+2025-01-29T05:44:09.017Z - info: Using extension express@4.1.3
+2025-01-29T05:44:09.323Z - info: Using extension freeze@4.0.0
+2025-01-29T05:44:09.325Z - info: Using extension fs-store@4.0.5
+2025-01-29T05:44:09.460Z - info: Using extension handlebars@4.0.1
+2025-01-29T05:44:09.462Z - info: Using extension import-export@4.0.5
+2025-01-29T05:44:09.472Z - info: Using extension jsrender@4.0.0
+2025-01-29T05:44:09.473Z - info: Using extension licensing@4.0.3
+2025-01-29T05:44:09.479Z - info: Using extension localization@4.0.1
+2025-01-29T05:44:09.480Z - info: Using extension npm@4.0.0
+2025-01-29T05:44:09.484Z - info: Using extension pdf-utils@4.2.2
+2025-01-29T05:44:09.487Z - info: Using extension reports@4.1.2
+2025-01-29T05:44:09.492Z - info: Using extension tags@4.0.1
+2025-01-29T05:44:09.498Z - info: Using extension text@4.0.2
+2025-01-29T05:44:09.500Z - info: Using extension version-control@4.0.0
+2025-01-29T05:44:09.510Z - info: Using extension assets@4.2.0
+2025-01-29T05:44:09.526Z - info: Using extension authorization@4.0.1
+2025-01-29T05:44:09.533Z - info: Using extension browser-client@4.1.0
+2025-01-29T05:44:09.535Z - info: Using extension chrome-pdf@4.1.0
+2025-01-29T05:44:09.539Z - info: Using extension docx@4.6.0
+2025-01-29T05:44:09.541Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-29T05:44:09.786Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-29T05:44:09.786Z - info: Using extension pptx@4.3.2
+2025-01-29T05:44:09.789Z - info: Using extension scheduling@4.0.0
+2025-01-29T05:44:09.822Z - info: Using extension scripts@4.1.0
+2025-01-29T05:44:09.823Z - info: Using extension static-pdf@4.1.0
+2025-01-29T05:44:09.824Z - info: Using extension studio@4.2.0
+2025-01-29T05:44:09.927Z - info: Using extension xlsx@4.3.0
+2025-01-29T05:44:09.932Z - info: Using extension public-templates@4.0.0
+2025-01-29T05:44:09.934Z - info: Using extension sample-template@4.0.0
+2025-01-29T05:44:09.937Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-29T05:44:09.938Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-29T05:44:09.938Z - info: Using fs provider for template store.
+2025-01-29T05:44:09.943Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-29T05:44:09.948Z - info: fs store is loading data
+2025-01-29T05:44:09.973Z - info: fs store is initialized successfully
+2025-01-29T05:44:09.983Z - info: Creating default express app.
+2025-01-29T05:44:10.003Z - info: jsreport server successfully started on http port: 5488
+2025-01-29T05:44:10.005Z - info: Verifying license key free
+2025-01-29T05:44:10.006Z - info: Using free license
+2025-01-29T05:44:10.009Z - info: Initializing worker threads
+2025-01-29T05:44:10.690Z - info: 2 worker threads initialized in 681ms
+2025-01-29T05:44:10.690Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-29T05:44:10.691Z - info: reporter initialized
+2025-01-29T05:46:02.609Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-29T05:46:02.612Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:46:02.618Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:46:02.671Z - info: Found 35 extension(s)
+2025-01-29T05:46:02.739Z - info: Using extension base@4.0.0
+2025-01-29T05:46:02.744Z - info: Using extension child-templates@4.1.0
+2025-01-29T05:46:02.746Z - info: Using extension cli@4.0.5
+2025-01-29T05:46:02.748Z - info: Using extension components@4.0.2
+2025-01-29T05:46:02.750Z - info: Using extension data@4.1.0
+2025-01-29T05:46:02.751Z - info: Using extension express@4.1.3
+2025-01-29T05:46:03.068Z - info: Using extension freeze@4.0.0
+2025-01-29T05:46:03.070Z - info: Using extension fs-store@4.0.5
+2025-01-29T05:46:03.190Z - info: Using extension handlebars@4.0.1
+2025-01-29T05:46:03.192Z - info: Using extension import-export@4.0.5
+2025-01-29T05:46:03.202Z - info: Using extension jsrender@4.0.0
+2025-01-29T05:46:03.203Z - info: Using extension licensing@4.0.3
+2025-01-29T05:46:03.208Z - info: Using extension localization@4.0.1
+2025-01-29T05:46:03.209Z - info: Using extension npm@4.0.0
+2025-01-29T05:46:03.212Z - info: Using extension pdf-utils@4.2.2
+2025-01-29T05:46:03.215Z - info: Using extension reports@4.1.2
+2025-01-29T05:46:03.220Z - info: Using extension tags@4.0.1
+2025-01-29T05:46:03.222Z - info: Using extension text@4.0.2
+2025-01-29T05:46:03.227Z - info: Using extension version-control@4.0.0
+2025-01-29T05:46:03.238Z - info: Using extension assets@4.2.0
+2025-01-29T05:46:03.248Z - info: Using extension authorization@4.0.1
+2025-01-29T05:46:03.254Z - info: Using extension browser-client@4.1.0
+2025-01-29T05:46:03.256Z - info: Using extension chrome-pdf@4.1.0
+2025-01-29T05:46:03.259Z - info: Using extension docx@4.6.0
+2025-01-29T05:46:03.261Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-29T05:46:03.532Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-29T05:46:03.533Z - info: Using extension pptx@4.3.2
+2025-01-29T05:46:03.535Z - info: Using extension scheduling@4.0.0
+2025-01-29T05:46:03.568Z - info: Using extension scripts@4.1.0
+2025-01-29T05:46:03.569Z - info: Using extension static-pdf@4.1.0
+2025-01-29T05:46:03.570Z - info: Using extension studio@4.2.0
+2025-01-29T05:46:03.654Z - info: Using extension xlsx@4.3.0
+2025-01-29T05:46:03.659Z - info: Using extension public-templates@4.0.0
+2025-01-29T05:46:03.660Z - info: Using extension sample-template@4.0.0
+2025-01-29T05:46:03.662Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-29T05:46:03.663Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-29T05:46:03.664Z - info: Using fs provider for template store.
+2025-01-29T05:46:03.668Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-29T05:46:03.674Z - info: fs store is loading data
+2025-01-29T05:46:03.703Z - info: fs store is initialized successfully
+2025-01-29T05:46:03.714Z - info: Creating default express app.
+2025-01-29T05:46:03.735Z - info: jsreport server successfully started on http port: 5488
+2025-01-29T05:46:03.736Z - info: Verifying license key free
+2025-01-29T05:46:03.736Z - info: Using free license
+2025-01-29T05:46:03.739Z - info: Initializing worker threads
+2025-01-29T05:46:04.388Z - info: 2 worker threads initialized in 649ms
+2025-01-29T05:46:04.389Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-29T05:46:04.389Z - info: reporter initialized
+2025-01-29T05:48:40.841Z - info: Initializing jsreport (version: 4.7.0, configuration file: jsreport.config.json, nodejs: 20.17.0)
+2025-01-29T05:48:40.845Z - info: Searching for available extensions in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:48:40.850Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\
+2025-01-29T05:48:40.906Z - info: Found 35 extension(s)
+2025-01-29T05:48:40.977Z - info: Using extension base@4.0.0
+2025-01-29T05:48:40.982Z - info: Using extension child-templates@4.1.0
+2025-01-29T05:48:40.985Z - info: Using extension cli@4.0.5
+2025-01-29T05:48:40.986Z - info: Using extension components@4.0.2
+2025-01-29T05:48:40.988Z - info: Using extension data@4.1.0
+2025-01-29T05:48:40.989Z - info: Using extension express@4.1.3
+2025-01-29T05:48:41.290Z - info: Using extension freeze@4.0.0
+2025-01-29T05:48:41.292Z - info: Using extension fs-store@4.0.5
+2025-01-29T05:48:41.412Z - info: Using extension handlebars@4.0.1
+2025-01-29T05:48:41.414Z - info: Using extension import-export@4.0.5
+2025-01-29T05:48:41.424Z - info: Using extension jsrender@4.0.0
+2025-01-29T05:48:41.425Z - info: Using extension licensing@4.0.3
+2025-01-29T05:48:41.431Z - info: Using extension localization@4.0.1
+2025-01-29T05:48:41.432Z - info: Using extension npm@4.0.0
+2025-01-29T05:48:41.435Z - info: Using extension pdf-utils@4.2.2
+2025-01-29T05:48:41.439Z - info: Using extension reports@4.1.2
+2025-01-29T05:48:41.444Z - info: Using extension tags@4.0.1
+2025-01-29T05:48:41.452Z - info: Using extension text@4.0.2
+2025-01-29T05:48:41.454Z - info: Using extension version-control@4.0.0
+2025-01-29T05:48:41.462Z - info: Using extension assets@4.2.0
+2025-01-29T05:48:41.473Z - info: Using extension authorization@4.0.1
+2025-01-29T05:48:41.478Z - info: Using extension browser-client@4.1.0
+2025-01-29T05:48:41.481Z - info: Using extension chrome-pdf@4.1.0
+2025-01-29T05:48:41.484Z - info: Using extension docx@4.6.0
+2025-01-29T05:48:41.486Z - info: Using extension html-to-xlsx@4.1.4
+2025-01-29T05:48:41.726Z - info: html-to-xlsx detected chrome as available html engine
+2025-01-29T05:48:41.727Z - info: Using extension pptx@4.3.2
+2025-01-29T05:48:41.730Z - info: Using extension scheduling@4.0.0
+2025-01-29T05:48:41.765Z - info: Using extension scripts@4.1.0
+2025-01-29T05:48:41.767Z - info: Using extension static-pdf@4.1.0
+2025-01-29T05:48:41.768Z - info: Using extension studio@4.2.0
+2025-01-29T05:48:41.857Z - info: Using extension xlsx@4.3.0
+2025-01-29T05:48:41.862Z - info: Using extension public-templates@4.0.0
+2025-01-29T05:48:41.864Z - info: Using extension sample-template@4.0.0
+2025-01-29T05:48:41.866Z - info: Using extension studio-theme-dark@4.0.0
+2025-01-29T05:48:41.868Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2025-01-29T05:48:41.869Z - info: Using fs provider for template store.
+2025-01-29T05:48:41.873Z - info: fs store is persisting using fs for C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker\data
+2025-01-29T05:48:41.879Z - info: fs store is loading data
+2025-01-29T05:48:41.908Z - info: fs store is initialized successfully
+2025-01-29T05:48:41.919Z - info: Creating default express app.
+2025-01-29T05:48:41.941Z - info: jsreport server successfully started on http port: 5488
+2025-01-29T05:48:41.942Z - info: Verifying license key free
+2025-01-29T05:48:41.943Z - info: Using free license
+2025-01-29T05:48:41.946Z - info: Initializing worker threads
+2025-01-29T05:48:42.687Z - info: 2 worker threads initialized in 741ms
+2025-01-29T05:48:42.688Z - info: Starting temp files cleanup with 180000ms threshold
+2025-01-29T05:48:42.689Z - info: reporter initialized

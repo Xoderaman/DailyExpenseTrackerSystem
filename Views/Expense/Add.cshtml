@@ -1,0 +1,69 @@
+﻿@model DailyExpenseTracker.Entity.Response.ExpenseResponse
+
+@{
+    ViewData["Title"] = "Add New Expense";
+    Layout = "_ExpenseOverviewCard";
+}
+
+<h2 class="text-center mt-4">Add New Expense</h2>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <form asp-action="Add" method="post">
+                        <!-- Amount Input -->
+                        <div class="mb-3">
+                            <label for="Amount" class="form-label">Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="Amount" asp-for="Amount" min="0" placeholder="0.00" required />
+                            </div>
+                        </div>
+
+                        <!-- Date Input -->
+                        <div class="mb-3">
+                            <label for="Date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="Date" asp-for="Date" value="@DateTime.Now.ToString("yyyy-MM-dd")" required />
+                        </div>
+
+                        <!-- Category Input -->
+                        <div class="mb-3">
+                            <label for="Category" class="form-label">Category</label>
+                            <select class="form-select" id="Category" asp-for="Category" required onchange="toggleCategoryInput()">
+                                <option selected disabled>Choose a category</option>
+                                <option>Food</option>
+                                <option>Travel</option>
+                                <option>Shopping</option>
+                                <option value="Other">Other</option>
+                            </select>
+
+                            <!-- Hidden text input for custom category -->
+                            <input type="text" class="form-control mt-2 d-none" id="OtherCategory" name="OtherCategory" placeholder="Enter your category">
+                        </div>
+
+                        <!-- Description Input -->
+                        <div class="mb-3">
+                            <label for="Description" class="form-label">Description</label>
+                            <textarea class="form-control" id="Description" asp-for="Description" rows="3" placeholder="Enter expense description..." required></textarea>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary">Save Expense</button>
+                            <a href="@Url.Action("Index", "Expense")" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

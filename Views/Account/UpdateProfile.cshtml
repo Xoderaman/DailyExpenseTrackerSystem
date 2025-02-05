@@ -1,0 +1,65 @@
+﻿@model DailyExpenseTracker.Entity.Request.UserModel
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Update Profile</h2>
+
+<form asp-action="UpdateProfile" asp-controller="Account" method="post">
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="mb-3">
+        <label>Username</label>
+        <input type="text" asp-for="UserName" class="form-control" />
+        <span class="text-danger" asp-validation-for="UserName"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" asp-for="Email" class="form-control" />
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Mobile</label>
+        <input type="text" asp-for="MobileNumber" class="form-control" />
+        <span class="text-danger" asp-validation-for="MobileNumber"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Password</label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <span class="text-danger" asp-validation-for="Password"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Update Profile</button>
+</form>
+
+<!-- SweetAlert Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var successMessage = "@TempData["SuccessMessage"]";
+        var errorMessage = "@TempData["ErrorMessage"]";
+
+        if (successMessage) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: successMessage,
+                confirmButtonText: "OK"
+            }).then(() => {
+                window.location.href = "/Account/Profile"; // Redirect after clicking OK
+            });
+        }
+
+        if (errorMessage) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: errorMessage,
+                confirmButtonText: "OK"
+            });
+        }
+    });
+</script>

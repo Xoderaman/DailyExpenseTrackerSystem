@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Expense Report";
+    Layout = null;
+}
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            margin-top: 30px;
+            color: #495057;
+        }
+
+        h1, h3 {
+            color: #343a40;
+            font-weight: 600;
+        }
+
+        .report-header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .table th, .table td {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: white;
+            border-top: 2px solid #0056b3;
+        }
+
+        /* Enhanced table styling */
+        .table-striped tbody tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        .table-striped tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f8f9fa;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .expense-list, .expense-summary {
+            margin-top: 40px;
+        }
+
+            .expense-list ul {
+                padding-left: 20px;
+            }
+
+            .expense-list li {
+                padding: 12px;
+                font-size: 1.1em;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 10px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+                .expense-list li:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+                }
+
+        .expense-summary {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .expense-summary p {
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+
+            .expense-summary table {
+                width: 100%;
+                margin-top: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .expense-summary td, .expense-summary th {
+                padding: 12px;
+                font-size: 1.1em;
+            }
+
+            .expense-summary th {
+                background-color: #007bff;
+                color: white;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="report-header">
+            <h1>@ViewData["Title"]</h1>
+        </div>
+
+        <!-- Total Expense Section -->
+        <div class="expense-summary">
+            <p><strong>Total Expense Amount: </strong><span>@ViewBag.TotalAmount</span></p>
+        </div>
+
+        <!-- Categories List -->
+        <div class="expense-list">
+            <h3>Categories</h3>
+            <ul>
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <li>@category</li>
+                }
+            </ul>
+        </div>
+
+        <!-- Expense Breakdown by Category -->
+        <div class="expense-summary">
+            <h3>Expense Breakdown by Category</h3>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Total Amount</th>
+                        <th>Number of Expenses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var data in ViewBag.ExpenseData)
+                    {
+                        <tr>
+                            <td>@data.Category</td>
+                            <td>@data.Amount</td>
+                            <td>@data.ExpenseCount</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

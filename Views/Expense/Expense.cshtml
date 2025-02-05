@@ -1,0 +1,37 @@
+﻿@* @model IEnumerable<DailyExpenseTracker.Models.ExpenseReasponse>
+
+<h2>Expense List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var expense in Model)
+        {
+            <tr>
+                <td>@expense.Category</td>
+                <td>@expense.Amount</td>
+                <td>@expense.Date.ToString("yyyy-MM-dd")</td>
+                <td>@expense.Description</td>
+                <td>
+                    <!-- Edit Button -->
+                    <a href="@Url.Action("Edit", "Home", new { expenseId = expense.ExpenseId })" class="btn btn-primary">Edit</a>
+
+                    <!-- Delete Button -->
+                    <a href="@Url.Action("Delete", "Home", new { expenseId = expense.ExpenseId })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Add New Expense Button -->
+<a href="@Url.Action("Create", "Home")" class="btn btn-success mt-3">Add New Expense</a>
+ *@
