@@ -1,0 +1,17 @@
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\bin\Debug\net8.0\DailyExpenseTracker.IRepository.deps.json
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\bin\Debug\net8.0\DailyExpenseTracker.IRepository.runtimeconfig.json
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\bin\Debug\net8.0\DailyExpenseTracker.IRepository.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\bin\Debug\net8.0\DailyExpenseTracker.IRepository.pdb
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\bin\Debug\net8.0\DailyExpenseTracker.Entity.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\bin\Debug\net8.0\DailyExpenseTracker.Entity.pdb
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExp.04ADF3CF.Up2Date
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\refint\DailyExpenseTracker.IRepository.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.pdb
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\DailyExpenseTracker.IRepository.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.IRepository\obj\Debug\net8.0\ref\DailyExpenseTracker.IRepository.dll

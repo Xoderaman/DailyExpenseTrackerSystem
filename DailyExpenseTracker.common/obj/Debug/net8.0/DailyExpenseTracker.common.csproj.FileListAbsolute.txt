@@ -1,0 +1,12 @@
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\bin\Debug\net8.0\DailyExpenseTracker.common.deps.json
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\bin\Debug\net8.0\DailyExpenseTracker.common.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\bin\Debug\net8.0\DailyExpenseTracker.common.pdb
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\refint\DailyExpenseTracker.common.dll
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\DailyExpenseTracker.common.pdb
+C:\Users\ASUS\Desktop\DailyExpenseTrackerSystem\DailyExpenseTracker\DailyExpenseTracker.common\obj\Debug\net8.0\ref\DailyExpenseTracker.common.dll
